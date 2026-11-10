@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORO Administration · Simulate (concept)</title>
+<meta name="description" content="Unofficial concept demo: a what-if simulator in ORO's process designer that forecasts cycle time and reviewer load for a draft process from the request log, before you publish it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/oro-mark.svg">
+</head>
+<body>
+<aside class="side">
+  <div class="logo"><img src="assets/oro-mark.svg" alt="ORO"></div>
+  <nav>
+    <a class="on"><i data-lucide="route"></i>Processes</a>
+    <a><i data-lucide="layout-panel-top"></i>Requests</a>
+    <a><i data-lucide="file-text"></i>Forms</a>
+    <a><i data-lucide="database"></i>Master Data</a>
+    <a><i data-lucide="settings"></i>Settings</a>
+    <a><i data-lucide="users"></i>Users and Groups</a>
+    <a><i data-lucide="activity"></i>Logs</a>
+  </nav>
+  <div class="side-foot">
+    <i data-lucide="list" class="listic"></i>
+    <div class="me"><div class="av">OA</div><div>Welcome, Oro</div></div>
+    <div class="runs"><span>PROUDLY RUNS ON</span><img src="assets/oro-wordmark.svg" alt="ORO"></div>
+  </div>
+</aside>
+
+<div class="main">
+  <header class="hdr">
+    <button class="burger" aria-label="Menu"><i data-lucide="menu"></i></button>
+    <div class="ttl">Proposal Risk-Domain Triage</div>
+    <div class="hdr-r"><span class="draft">Draft · not published</span></div>
+  </header>
+  <div class="cols">
+    <section class="palette">
+      <div class="tabs"><button>Tasks</button><button>Sub Processes</button><button class="on">Simulate</button></div>
+      <div class="ctrl" id="ctrl"></div>
+    </section>
+    <section class="canvas" id="canvas"></section>
+    <section class="results" id="results"></section>
+  </div>
+  <footer class="foot">Unofficial concept demo by Mohith Gajjela. Not affiliated with ORO Labs. Synthetic data. <a href="https://github.com/Mohith26/oro-labs-process-simulator">Source</a></footer>
+</div>
+<div class="tip" id="tip"></div>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
